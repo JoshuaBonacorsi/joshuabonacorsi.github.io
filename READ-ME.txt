@@ -1,6 +1,6 @@
-  =>  Template Name    : FreeFolio - Freelancer Portfolio Template
+  =>  Template Name    : DevFolio - Developer Portfolio Template
 
-  =>  Template Link    : https://htmlcodex.com/freelancer-portfolio-template
+  =>  Template Link    : https://htmlcodex.com/developer-portfolio-template
 
   =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
 

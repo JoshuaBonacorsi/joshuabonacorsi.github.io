@@ -1,16 +1,45 @@
 (function ($) {
     "use strict";
-
-    // Navbar on scrolling
+    
+    // loader
+    var loader = function () {
+        setTimeout(function () {
+            if ($('#loader').length > 0) {
+                $('#loader').removeClass('show');
+            }
+        }, 1);
+    };
+    loader();
+    
+    
+    // Initiate the wowjs
+    new WOW().init();
+    
+    
+    // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 200) {
-            $('.navbar').fadeIn('slow').css('display', 'flex');
+            $('.back-to-top').fadeIn('slow');
         } else {
-            $('.navbar').fadeOut('slow').css('display', 'none');
+            $('.back-to-top').fadeOut('slow');
         }
     });
-
-
+    $('.back-to-top').click(function () {
+        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        return false;
+    });
+    
+    
+    // Sticky Navbar
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+            $('.navbar').addClass('nav-sticky');
+        } else {
+            $('.navbar').removeClass('nav-sticky');
+        }
+    });
+    
+    
     // Smooth scrolling on the navbar links
     $(".navbar-nav a").on('click', function (event) {
         if (this.hash !== "") {
@@ -26,12 +55,12 @@
             }
         }
     });
-
-
+    
+    
     // Typed Initiate
-    if ($('.typed-text-output').length == 1) {
-        var typed_strings = $('.typed-text').text();
-        var typed = new Typed('.typed-text-output', {
+    if ($('.hero .hero-text h2').length == 1) {
+        var typed_strings = $('.hero .hero-text .typed-text').text();
+        var typed = new Typed('.hero .hero-text h2', {
             strings: typed_strings.split(', '),
             typeSpeed: 100,
             backSpeed: 20,
@@ -39,78 +68,41 @@
             loop: true
         });
     }
-
-
-    // Modal Video
-    $(document).ready(function () {
-        var $videoSrc;
-        $('.btn-play').click(function () {
-            $videoSrc = $(this).data("src");
-        });
-        console.log($videoSrc);
-
-        $('#videoModal').on('shown.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-        })
-
-        $('#videoModal').on('hide.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc);
-        })
-    });
-
-
-    // Scroll to Bottom
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            $('.scroll-to-bottom').fadeOut('slow');
-        } else {
-            $('.scroll-to-bottom').fadeIn('slow');
-        }
-    });
-
-
+    
+    
     // Skills
-    $('.skill').waypoint(function () {
+    $('.skills').waypoint(function () {
         $('.progress .progress-bar').each(function () {
             $(this).css("width", $(this).attr("aria-valuenow") + '%');
         });
     }, {offset: '80%'});
 
 
-    // Portfolio isotope and filter
+    // Testimonials carousel
+    $(".testimonials-carousel").owlCarousel({
+        center: true,
+        autoplay: true,
+        dots: true,
+        loop: true,
+        responsive: {
+            0:{
+                items:1
+            }
+        }
+    });
+    
+    
+    
+    // Portfolio filter
     var portfolioIsotope = $('.portfolio-container').isotope({
         itemSelector: '.portfolio-item',
         layoutMode: 'fitRows'
     });
-    $('#portfolio-flters li').on('click', function () {
-        $("#portfolio-flters li").removeClass('active');
-        $(this).addClass('active');
 
+    $('#portfolio-filter li').on('click', function () {
+        $("#portfolio-filter li").removeClass('filter-active');
+        $(this).addClass('filter-active');
         portfolioIsotope.isotope({filter: $(this).data('filter')});
-    });
-    
-    
-    // Back to top button
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 200) {
-            $('.back-to-top').fadeIn('slow');
-        } else {
-            $('.back-to-top').fadeOut('slow');
-        }
-    });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-        return false;
-    });
-
-
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1500,
-        dots: true,
-        loop: true,
-        items: 1
     });
     
 })(jQuery);
