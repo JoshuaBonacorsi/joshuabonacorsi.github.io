@@ -548,6 +548,106 @@ a:focus {
 }
 
 /*******************************/
+/*** Dropdown Skills CSS ***/
+/*******************************/
+.skills-section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.skill-dropdown {
+    border: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.skill-header:hover {
+    background-color: #f0f0f0;
+}
+
+.skill-title {
+    font-weight: 500;
+    font-size: 16px;
+    color: #333;
+}
+
+.skill-arrow {
+    transition: transform 0.3s;
+}
+
+.skill-arrow.active {
+    transform: rotate(180deg);
+}
+
+.skill-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background-color: #fff;
+    padding: 0 20px;
+}
+
+.skill-content.active {
+    max-height: 500px;
+    padding: 15px 20px;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.web-design {
+    background-color: #e3f2fd;
+    color: #1565c0;
+    border: 1px solid #bbdefb;
+}
+
+.web-dev {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+}
+
+.app-design {
+    background-color: #f3e5f5;
+    color: #7b1fa2;
+    border: 1px solid #e1bee7;
+}
+
+.app-dev {
+    background-color: #fff3e0;
+    color: #e65100;
+    border: 1px solid #ffe0b2;
+}
+
+/*******************************/
 /******* Experience CSS ********/
 /*******************************/
 .experience {

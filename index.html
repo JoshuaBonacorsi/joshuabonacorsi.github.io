@@ -22,6 +22,9 @@
 
         <!-- Template Stylesheet -->
         <link href="./css/style.css" rel="stylesheet">
+
+        <!-- My Scripts -->
+        <script src="js/my_scripts.js"></script>
     </head>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -75,66 +78,118 @@
         </div>
         <!-- Hero End -->
 
-
-        <!-- About Start -->
-        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="about-img">
-                            <img src="img/joshua_blackwhite.jpg" alt="Image">
+<!-- About Start -->
+<div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-img">
+                    <img src="img/joshua_blackwhite.jpg" alt="Image">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-content">
+                    <div class="section-header text-left">
+                        <p>Learn About Me</p>
+                        <h2>1 Year Experience</h2>
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            Driven by a deep interest in artificial intelligence, I am an engineer committed to harnessing my skills for impactful applications.
+                        </p>
+                        <p>
+                            My background includes utilizing Large Language Models (LLMs) for a variety of initiatives, from creating sophisticated recommendation systems to conducting comprehensive data analyses. This experience has honed my capability to craft cutting-edge AI solutions.
+                        </p>
+                        <p>
+                            My goal is to make a meaningful contribution to projects that deliver tangible business results.
+                        </p>
+                    </div>
+                    
+                    <!-- Menus déroulants pour les compétences -->
+                    <div class="skills-section">
+                        <!-- Web Design -->
+                        <div class="skill-dropdown">
+                            <div class="skill-header" onclick="toggleSkill(this)">
+                                <div class="skill-title">Web Design</div>
+                                <div class="skill-arrow">▼</div>
+                            </div>
+                            <div class="skill-content">
+                                <div class="skills-tags">
+                                    <div class="skill-tag web-design">Responsive Design</div>
+                                    <div class="skill-tag web-design">UI/UX</div>
+                                    <div class="skill-tag web-design">Wireframing</div>
+                                    <div class="skill-tag web-design">Photoshop</div>
+                                    <div class="skill-tag web-design">Figma</div>
+                                    <div class="skill-tag web-design">CSS Animation</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Web Development -->
+                        <div class="skill-dropdown">
+                            <div class="skill-header" onclick="toggleSkill(this)">
+                                <div class="skill-title">Web Development</div>
+                                <div class="skill-arrow">▼</div>
+                            </div>
+                            <div class="skill-content">
+                                <div class="skills-tags">
+                                    <div class="skill-tag web-dev">HTML/CSS</div>
+                                    <div class="skill-tag web-dev">JavaScript</div>
+                                    <div class="skill-tag web-dev">React</div>
+                                    <div class="skill-tag web-dev">Node.js</div>
+                                    <div class="skill-tag web-dev">PHP</div>
+                                    <div class="skill-tag web-dev">MySQL</div>
+                                    <div class="skill-tag web-dev">MongoDB</div>
+                                    <div class="skill-tag web-dev">WordPress</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Apps Design -->
+                        <div class="skill-dropdown">
+                            <div class="skill-header" onclick="toggleSkill(this)">
+                                <div class="skill-title">Apps Design</div>
+                                <div class="skill-arrow">▼</div>
+                            </div>
+                            <div class="skill-content">
+                                <div class="skills-tags">
+                                    <div class="skill-tag app-design">Mobile UI</div>
+                                    <div class="skill-tag app-design">Material Design</div>
+                                    <div class="skill-tag app-design">iOS Design</div>
+                                    <div class="skill-tag app-design">Sketch</div>
+                                    <div class="skill-tag app-design">Adobe XD</div>
+                                    <div class="skill-tag app-design">User Testing</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Apps Development -->
+                        <div class="skill-dropdown">
+                            <div class="skill-header" onclick="toggleSkill(this)">
+                                <div class="skill-title">Apps Development</div>
+                                <div class="skill-arrow">▼</div>
+                            </div>
+                            <div class="skill-content">
+                                <div class="skills-tags">
+                                    <div class="skill-tag app-dev">Swift</div>
+                                    <div class="skill-tag app-dev">Java</div>
+                                    <div class="skill-tag app-dev">Kotlin</div>
+                                    <div class="skill-tag app-dev">React Native</div>
+                                    <div class="skill-tag app-dev">Flutter</div>
+                                    <div class="skill-tag app-dev">Firebase</div>
+                                    <div class="skill-tag app-dev">RESTful APIs</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="about-content">
-                            <div class="section-header text-left">
-                                <p>Learn About Me</p>
-                                <h2>1 Year Experience</h2>
-                            </div>
-                            <div class="about-text">
-                                <p>
-                                    Driven by a deep interest in artificial intelligence, I am an engineer committed to harnessing my skills for impactful applications.
-                                </p>
-                                <p>
-                                    My background includes utilizing Large Language Models (LLMs) for a variety of initiatives, from creating sophisticated recommendation systems to conducting comprehensive data analyses. This experience has honed my capability to craft cutting-edge AI solutions.
-                                </p>
-                                <p>
-                                    My goal is to make a meaningful contribution to projects that deliver tangible business results.
-                                </p>
-                            </div>
-                            <div class="skills">
-                                <div class="skill-name">
-                                    <p>Web Design</p><p>85%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-name">
-                                    <p>Web Development</p><p>95%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-name">
-                                    <p>Apps Design</p><p>90%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-name">
-                                    <p>Apps Development</p><p>85%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <a class="btn" href="">Learn More</a>
-                        </div>
-                    </div>
+                    
+                    <a class="btn" href="">Learn More</a>
                 </div>
             </div>
         </div>
-        <!-- About End -->
+    </div>
+</div>
+<!-- About End -->
         
         
         <!-- Service Start -->
