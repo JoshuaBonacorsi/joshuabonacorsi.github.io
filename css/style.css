@@ -206,7 +206,7 @@ a:focus {
 
     .navbar-light .navbar-nav .nav-link:hover,
     .navbar-light .navbar-nav .nav-link.active {
-        color: #111111;
+        color: #2389ef;
     }
     
     .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
@@ -248,7 +248,7 @@ a:focus {
     margin-bottom: 45px;
     padding: 120px 0 0 0;
     overflow: hidden;
-    background: url(../img/hero-bg.jpg);
+    background: linear-gradient(rgba(13, 42, 102, .95), rgba(19, 56, 138, .95)), url(../img/hero-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -557,20 +557,21 @@ a:focus {
 
 .skill-dropdown {
     border: 1px solid #e0e0e0;
-    margin-bottom: 10px;
-    border-radius: 5px;
+    margin-bottom: 12px;
+    border-radius: 0;
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+    font-family: 'Montserrat', sans-serif;
 }
 
 .skill-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
-    background-color: #f9f9f9;
+    padding: 12px 20px;
+    background-color: #f8f9fa;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
 }
 
 .skill-header:hover {
@@ -578,13 +579,16 @@ a:focus {
 }
 
 .skill-title {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
-    color: #333;
+    color: #414141;
+    letter-spacing: 0.5px;
 }
 
 .skill-arrow {
     transition: transform 0.3s;
+    color: #2364ef;
+    font-weight: bold;
 }
 
 .skill-arrow.active {
@@ -595,56 +599,88 @@ a:focus {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 0 20px;
 }
 
 .skill-content.active {
-    max-height: 500px;
+    max-height: 1000px;
     padding: 15px 20px;
+}
+
+.skill-subcategory {
+    font-weight: 600;
+    font-size: 14px;
+    color: #414141;
+    margin: 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .skills-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    margin-bottom: 20px;
 }
 
 .skill-tag {
-    padding: 6px 12px;
-    border-radius: 20px;
+    padding: 6px 14px;
+    border-radius: 0;
     font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
     display: inline-block;
     transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .skill-tag:hover {
     transform: translateY(-3px);
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-.web-design {
-    background-color: #e3f2fd;
-    color: #1565c0;
-    border: 1px solid #bbdefb;
+/* Dégradé de couleurs bleu */
+.programming {
+    background-color: rgba(35, 100, 239, 0.1);
+    color: #2364ef;
+    border: 1px solid rgba(35, 100, 239, 0.2);
 }
 
-.web-dev {
-    background-color: #e8f5e9;
-    color: #2e7d32;
-    border: 1px solid #c8e6c9;
+.spoken {
+    background-color: rgba(29, 80, 192, 0.1);
+    color: #1d50c0;
+    border: 1px solid rgba(29, 80, 192, 0.2);
 }
 
-.app-design {
-    background-color: #f3e5f5;
-    color: #7b1fa2;
-    border: 1px solid #e1bee7;
+.cloud {
+    background-color: rgba(26, 70, 170, 0.1);
+    color: #1a46aa;
+    border: 1px solid rgba(26, 70, 170, 0.2);
 }
 
-.app-dev {
-    background-color: #fff3e0;
-    color: #e65100;
-    border: 1px solid #ffe0b2;
+.databases {
+    background-color: rgba(23, 61, 149, 0.1);
+    color: #173d95;
+    border: 1px solid rgba(23, 61, 149, 0.2);
+}
+
+.python-lib {
+    background-color: rgba(20, 57, 128, 0.1);
+    color: #143980;
+    border: 1px solid rgba(20, 57, 128, 0.2);
+}
+
+.data-viz {
+    background-color: rgba(17, 50, 107, 0.1);
+    color: #11326b;
+    border: 1px solid rgba(17, 50, 107, 0.2);
+}
+
+.version-control {
+    background-color: rgba(16, 49, 120, 0.1);
+    color: #103178;
+    border: 1px solid rgba(16, 49, 120, 0.2);
 }
 
 /*******************************/
@@ -1067,7 +1103,7 @@ a:focus {
 }
 
 .banner .section-header p {
-    color: #414141;
+    color: #103178;
     background: transparent;
 }
 
@@ -1080,7 +1116,7 @@ a:focus {
 }
 
 .banner .section-header h2 span {
-    color: #414141;
+    color: #103178;
     font-size: 50px;
 }
 
@@ -1141,7 +1177,7 @@ a:focus {
 
 .price .price-header {
     padding: 45px 0 30px 0;
-    color: #414141;
+    color: #103178;
 }
 
 .price .price-item.featured-item .price-header {
@@ -1198,15 +1234,15 @@ a:focus {
 
 .price .price-item .price-action .btn {
     color: #ffffff;
-    background: #414141;
-    box-shadow: inset 0 0 0 50px #414141;
+    background: #103178;
+    box-shadow: inset 0 0 0 50px #103178;
 }
 
 .price .price-item .price-action .btn:hover {
-    color: #414141;
+    color: #103178;
     background: transparent;
-    box-shadow: inset 0 0 0 0 #414141;
-    border-color: #414141;
+    box-shadow: inset 0 0 0 0 #103178;
+    border-color: #103178;
 }
 
 .price .price-item.featured-item .price-action .btn {
@@ -1667,7 +1703,7 @@ a:focus {
 }
 
 .footer .footer-social a:hover i {
-    color: #414141;
+    color: #103178;
 }
 
 .footer .copyright {
@@ -1703,7 +1739,7 @@ a:focus {
 }
 
 .footer .copyright p a:hover {
-    color: #414141;
+    color: #103178;
 }
 
 @media (max-width: 575.98px) {
