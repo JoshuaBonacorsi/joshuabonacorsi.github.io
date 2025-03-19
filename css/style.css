@@ -952,11 +952,11 @@ a:focus {
 
 /* Style pour les images */
 .service .service-icon img {
-    width: 80%;
-    height: 80%;
-    object-fit: cover;
-    object-position: center;
-    transition: .3s;
+    width: 80% !important;
+    height: 80% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    transition: .3s !important;
 }
 
 .service .service-item:hover .service-icon img {
