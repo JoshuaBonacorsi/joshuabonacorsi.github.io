@@ -934,8 +934,11 @@ a:focus {
     justify-content: center;
     border: 1px solid #2364ef;
     background: #ffffff;
+    overflow: hidden;
+    padding: 0;
 }
 
+/* Style pour les icônes Font Awesome */
 .service .service-icon i {
     position: relative;
     font-size: 60px;
@@ -943,8 +946,21 @@ a:focus {
     transition: .3s;
 }
 
-.service .service-item:hover i {
+.service .service-item:hover .service-icon i {
     font-size: 75px;
+}
+
+/* Style pour les images */
+.service .service-icon img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+    transition: .3s;
+}
+
+.service .service-item:hover .service-icon img {
+    transform: scale(1.1);
 }
 
 .service .service-text {
@@ -981,7 +997,6 @@ a:focus {
         font-size: 14px;
     }
 }
-
 
 /*******************************/
 /******** Portfolio CSS ********/
