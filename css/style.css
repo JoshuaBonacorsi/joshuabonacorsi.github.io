@@ -192,6 +192,10 @@ a:focus {
     }
     
     .navbar.nav-sticky .navbar-brand {
+        color: #414141;
+    }
+
+    .navbar.nav-sticky .navbar-brand:hover {
         color: #2364ef;
     }
 
