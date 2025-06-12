@@ -1,563 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Joshua BONACORSI - Portfolio</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="BONACORSI Portfolio" name="keywords">
-        <meta content="Joshua BONACORSI Website" name="description">
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Bonacorsi | Data Scientist & Business Leader</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-xh6giXhqytqwxKF1u9IiMaivGi99Z0eKCbFf8gDuwZQzQ0jrISFRCGDpa2BkLomPvKgkl0vvVuv5Q98M9+ug1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">JB</a>
+            <nav id="nav-menu" class="nav-menu">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="burger" class="burger" aria-label="Toggle navigation">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
+        </div>
+    </header>
 
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
-
-        <!-- Google Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-        <!-- CSS Libraries -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-        <!-- Template Stylesheet -->
-        <link href="./css/style.css" rel="stylesheet">
-
-        <!-- My Scripts -->
-        <script src="./js/my_scripts.js"></script>
-    </head>
-
-    <body data-spy="scroll" data-target=".navbar" data-offset="51">
-        <!-- Nav Bar Start -->
-        <div class="navbar navbar-expand-lg bg-light navbar-light">
-            <div class="container-fluid">
-                <a href="index.html" class="navbar-brand">PortFolio</a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto">
-                        <a href="#home" class="nav-item nav-link active">Home</a>
-                        <a href="#about" class="nav-item nav-link">About</a>
-                        <a href="#service" class="nav-item nav-link">Education</a>
-                        <a href="#experience" class="nav-item nav-link">Experience</a>
-                        <a href="#articles" class="nav-item nav-link">Articles</a>
-                        <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-                        <a href="#contact" class="nav-item nav-link">Contact</a>
-                    </div>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container hero-flex">
+            <div class="hero-text">
+                <h1><span class="typed-text accent"></span><span class="cursor accent">|</span></h1>
+                <p>Turning complex data into actionable business insights through mathematics, AI, and strategic vision.</p>
+                <div class="hero-cta">
+                    <a href="documents/bonacorsijpro_cv.pdf" class="btn" target="_blank" rel="noopener">Download CV</a>
+                    <a href="#contact" class="btn btn-outline">Contact me</a>
                 </div>
             </div>
         </div>
-        <!-- Nav Bar End -->
+    </section>
 
-
-        <!-- Hero Start -->
-        <div class="hero" id="home">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="hero-content">
-                            <div class="hero-text">
-                                <p>I'm</p>
-                                <h1>Joshua BONACORSI</h1>
-                                <h2></h2>
-                                <div class="typed-text">Data Scientist, Applied Maths Engineer</div>
-                            </div>
-                            <div class="hero-btn">
-                                <a class="btn" href="#footer">Hire Me</a>
-                            </div>
-                        </div>
-                    </div>
+    <!-- About -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2>Who Am I ?</h2>
+            <div class="about-flex">
+                <div class="about-photo">
+                    <img src="img/joshua_blackwhite.jpg" alt="Joshua Bonacorsi portrait" />
                 </div>
-            </div>
-        </div>
-        <!-- Hero End -->
-
-        <!-- About Start -->
-        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="about-img">
-                            <img src="img/joshua_blackwhite.jpg" alt="Image">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="about-content">
-                            <div class="section-header text-left">
-                                <p>Learn About Me</p>
-                                <h2>Who Am I ?</h2>
-                            </div>
-                            <div class="about-text">
-                                <p>
-                                    Driven by a deep interest in artificial intelligence, I am an engineer committed to harnessing my skills for impactful applications.
-                                </p>
-                                <p>
-                                    My background includes utilizing Large Language Models (LLMs) for a variety of initiatives, from creating sophisticated recommendation systems to conducting comprehensive data analyses. This experience has honed my capability to craft cutting-edge AI solutions.
-                                </p>
-                                <p>
-                                    My goal is to make a meaningful contribution to projects that deliver tangible business results.
-                                </p>
-                            </div>
-                            
-                            <!-- Menus déroulants pour les compétences -->
-                            <div class="skills-section">
-                                <!-- Languages -->
-                                <div class="skill-dropdown">
-                                    <div class="skill-header" onclick="toggleSkill(this)">
-                                        <div class="skill-title">Languages</div>
-                                        <div class="skill-arrow">▼</div>
-                                    </div>
-                                    <div class="skill-content">
-                                        <div class="skill-subcategory">Programming</div>
-                                        <div class="skills-tags">
-                                            <div class="skill-tag programming">Python</div>
-                                            <div class="skill-tag programming">SQL</div>
-                                        </div>
-                                        <div class="skill-subcategory">Spoken</div>
-                                        <div class="skills-tags">
-                                            <div class="skill-tag spoken">French (native)</div>
-                                            <div class="skill-tag spoken">English (fluent)</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <!-- Technologies & Platforms -->
-                                <div class="skill-dropdown">
-                                    <div class="skill-header" onclick="toggleSkill(this)">
-                                        <div class="skill-title">Technologies & Platforms</div>
-                                        <div class="skill-arrow">▼</div>
-                                    </div>
-                                    <div class="skill-content">
-                                        <div class="skill-subcategory">Cloud & Big Data</div>
-                                        <div class="skills-tags">
-                                            <div class="skill-tag cloud">AWS</div>
-                                            <div class="skill-tag cloud">Microsoft Azure Databricks</div>
-                                            <div class="skill-tag cloud">Apache Spark</div>
-                                        </div>
-                                        <div class="skill-subcategory">Databases</div>
-                                        <div class="skills-tags">
-                                            <div class="skill-tag databases">MySQL</div>
-                                            <div class="skill-tag databases">MongoDB</div>
-                                            <div class="skill-tag databases">MariaDB</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <!-- Development Tools -->
-                                <div class="skill-dropdown">
-                                    <div class="skill-header" onclick="toggleSkill(this)">
-                                        <div class="skill-title">Development Tools</div>
-                                        <div class="skill-arrow">▼</div>
-                                    </div>
-                                    <div class="skill-content">
-                                        <div class="skill-subcategory">Python Libraries</div>
-                                        <div class="skills-tags">
-                                            <div class="skill-tag python-lib">Numpy</div>
-                                            <div class="skill-tag python-lib">Pandas</div>
-                                            <div class="skill-tag python-lib">PySpark</div>
-                                            <div class="skill-tag python-lib">Scikit-Learn</div>
-                                            <div class="skill-tag python-lib">TensorFlow</div>
-                                            <div class="skill-tag python-lib">PyTorch</div>
-                                            <div class="skill-tag python-lib">BeautifulSoup</div>
-                                            <div class="skill-tag python-lib">OpenCV</div>
-                                            <div class="skill-tag python-lib">HuggingFace Tools</div>
-                                        </div>
-                                        <div class="skill-subcategory">Data Visualization</div>
-                                        <div class="skills-tags">
-                                            <div class="skill-tag data-viz">Streamlit</div>
-                                            <div class="skill-tag data-viz">Plotly</div>
-                                            <div class="skill-tag data-viz">Matplotlib</div>
-                                            <div class="skill-tag data-viz">Seaborn</div>
-                                        </div>
-                                        <div class="skill-subcategory">Version Control</div>
-                                        <div class="skills-tags">
-                                            <div class="skill-tag version-control">Git</div>
-                                            <div class="skill-tag version-control">GitLab</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <a class="btn" href="documents/bonacorsijpro_cv.pdf" download="BONACORSI_JOSHUA_CV.pdf">Download my CV</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
-        
-         <!-- Testimonial Start -->
-        <div class="testimonial wow fadeInUp" data-wow-delay="0.1s" id="review">
-            <div class="container">
-                <div class="testimonial-icon">
-                    <i class="fa fa-quote-left"></i>
-                </div>
-                <div class="owl-carousel testimonials-carousel">
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="img/testimonial-1.jpg" alt="Image">
-                        </div>
-                        <div class="testimonial-text">
-                            <p>
-                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
-                            </p>
-                            <h3>Customer Name</h3>
-                            <h4>Profession</h4>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="img/testimonial-2.jpg" alt="Image">
-                        </div>
-                        <div class="testimonial-text">
-                            <p>
-                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
-                            </p>
-                            <h3>Customer Name</h3>
-                            <h4>Profession</h4>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="img/testimonial-3.jpg" alt="Image">
-                        </div>
-                        <div class="testimonial-text">
-                            <p>
-                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
-                            </p>
-                            <h3>Customer Name</h3>
-                            <h4>Profession</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Testimonial End -->
-         
-        <!-- Service Start -->
-        <div class="service" id="service">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>My journey in knowledge</p>
-                    <h2>Education</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <img src="./img/cy_logo.jpg" alt="CY Paris-University Logo">
-                            </div>
-                            <div class="service-text">
-                                <h3>Master's Degree in Applied Mathematics</h3>
-                                <p>
-                                    CY Paris-University, 2018-2023
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <img src="./img/deeplearningai_logo.jpg" alt="DeepLearning.AI Logo">
-                        </div>
-                        <div class="service-text">
-                            <h3>NLP Specialization</h3>
-                            <p>
-                                by DeepLearning.AI, Coursera
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <img src="./img/stanfordonline_logo.jpg" alt="Stanford Online Logo">
-                        </div>
-                        <div class="service-text">
-                            <h3>Machine Learning Specialization</h3>
-                            <p>
-                                by Stanford Online, Coursera
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <img src="./img/aws_logo.jpg" alt="AWS Logo">
-                        </div>
-                        <div class="service-text">
-                            <h3>AWS Cloud Certification (Currently attending)</h3>
-                            <p>
-                                by AWS Learning Platform
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-        <!-- Service End -->
-        
-        
-         <!-- Experience Start -->
-        <div class="experience" id="experience">
-            <div class="container">
-                <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>My Resume</p>
-                    <h2>Working Experience</h2>
-                </header>
-                <div class="timeline">
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">Apr 2024 - Now | 1 Year</div>
-                            <div class="timeline-header">
-                                <img src="./img/canalplus_logo.jpg" alt="Covea Group Logo" class="company-logo">
-                                <div class="timeline-title">
-                                    <h2>Data Scientist</h2>
-                                    <h4>Canal+ Group • Permanent</h4>
-                                    <h5>Kirchberg, Luxembourg</h5>
-                                </div>
-                            </div>
-                            <p>
-                                Driving value from data across <strong>12 M7 Group brands</strong> in Europe. My role involves leveraging <strong>advanced data analytics</strong> to enhance business outcomes and competitive positioning.
-                            </p>
-                            <p>
-                                <em>Due to confidentiality agreements, specific details of ongoing projects cannot be disclosed at this time.</em>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">Oct 2023 - Mar 2024 | 6 Months</div>
-                            <div class="timeline-header">
-                                <img src="./img/m7_logo.jpg" alt="M7 Group Logo" class="company-logo">
-                                <div class="timeline-title">
-                                    <h2>Data Scientist</h2>
-                                    <h4>M7 Group • Pre-employment Traineeship</h4>
-                                    <h5>Kirchberg, Luxembourg</h5>
-                                </div>
-                            </div>
-                            <p>
-                                • Developed a <strong>recommendation engine</strong> using <strong>advanced Large Language Models</strong> integrated with <strong>marketing automation</strong> to trigger personalized recommendations, resulting in <strong>increased viewership</strong> and measurable <strong>churn reduction</strong>.
-                            </p>
-                            <p>
-                                • Created <strong>interactive Streamlit dashboards</strong> to address diverse business needs including <strong>customer segmentation</strong> and content analysis, enabling data-driven decisions through <strong>accessible visualizations</strong> of complex user behavior patterns.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">Sep 2022 - Sep 2023 | 1 Year</div>
-                            <div class="timeline-header">
-                                <img src="./img/covea_logo.jpg" alt="Covea Group Logo" class="company-logo">
-                                <div class="timeline-title">
-                                    <h2>Data Scientist</h2>
-                                    <h4>Covea Group • Apprenticeship</h4>
-                                    <h5>Paris, France</h5>
-                                </div>
-                            </div>
-                            <p>
-                                • Implemented <strong>advanced NLP techniques</strong> to analyze multi-tonal feedback from <strong>11.4 million insured clients</strong>, extracting <strong>actionable insights</strong> that influenced product improvements and retention strategies.
-                            </p>
-                            <p>
-                                • Worked within a <strong>Microsoft Azure cloud environment</strong>, implementing best practices for data governance and ML deployments to ensure compliance and seamless integration.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">May 2022 - Aug 2022 | 4 Months</div>
-                            <div class="timeline-header">
-                                <img src="./img/knds_logo.jpg" alt="KNDS Group Logo" class="company-logo">
-                                <div class="timeline-title">
-                                    <h2>Data Analyst</h2>
-                                    <h4>KNDS Group • Internship</h4>
-                                    <h5>Versailles, France</h5>
-                                </div>
-                            </div>
-                            <p>
-                                • Engineered a <strong>comprehensive data analytics web application</strong> featuring intuitive dashboards and <strong>interactive visualizations</strong>, providing relevant sales insights and resulting in a <strong>significant increase in process efficiency</strong>.
-                            </p>
-                            <p>
-                                • Collaborated with <strong>sales executives and business stakeholders</strong> to identify critical challenges, ensuring the solution directly addressed business needs and enabled more <strong>strategic, data-driven decision-making</strong>.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Job Experience End -->
-        
-        
-        <!-- Banner Start -->
-        <div class="banner wow zoomIn" data-wow-delay="0.1s" id="articles">
-            <div class="container">
-                <div class="section-header text-center">
-                    <p>Problem-Solving Mindset</p>
-                    <h2>Explore My <span>Medium</span> Articles</h2>
-                </div>
-                <div class="container banner-text">
+                <div class="about-desc">
                     <p>
-                        As someone with a scientific background, I’m drawn to intriguing problems in any domain, analyzing every angle and experimenting with different approaches to find creative solutions.
+                        Driven by a passion for applied mathematics and artificial intelligence, I craft data-driven solutions that bridge science and business. My journey spans Large Language Models for recommender systems and advanced analytics that deliver tangible value.
                     </p>
                     <p>
-                        On Medium, you’ll find a variety of these explorations, providing a behind-the-scenes look at how I reason through challenges. It might appear eclectic, but that’s exactly what reflects my passion for curiosity-driven thinking.
+                        Graduated with an MSc in Engineering (Applied Mathematics & Data Science) in 2023, I thrive at the intersection of technology, strategy and impact—always eager to collaborate on initiatives that push innovation forward.
                     </p>
-                    <a class="btn" href="https://medium.com/@JoshuaBonacorsi">Visit My Medium Profile</a>
                 </div>
             </div>
         </div>
-        <!-- Banner End -->
-
-
-        <!-- Portfolio Start -->
-        <div class="portfolio" id="portfolio">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>My Portfolio</p>
-                    <h2>Projects</h2>
+        <div class="container">
+            <h2>Education & Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <img src="img/cy_logo.jpg" alt="CY Tech" />
+                    <span>MSc in Engineering, Applied Mathematics & Data Science<br><small>CY Cergy Paris University · 2018-2023</small></span>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <ul id="portfolio-filter">
-                            <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".filter-1">Computer Vision</li>
-                            <li data-filter=".filter-2">Natural Language Processing</li>
-                            <li data-filter=".filter-3">Analytics</li>
-                            <li data-filter=".filter-4">Others</li>
-                        </ul>
+                <div class="cert-item">
+                    <img src="img/stanfordonline_logo.jpg" alt="Stanford Online" />
+                    <span>Machine Learning Specialization<br><small>Stanford Online · 2022</small></span>
+                </div>
+                <div class="cert-item">
+                    <img src="img/deeplearningai_logo.jpg" alt="DeepLearning AI" />
+                    <span>NLP Specialization<br><small>DeepLearning.AI · 2024</small></span>
+                </div>
+                <div class="cert-item">
+                    <img src="img/aws_logo.jpg" alt="AWS" />
+                    <span>AWS Certified Cloud Practitioner<br><small>AWS · 2024 - now</small></span>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill-grid">
+                <div class="skill-card">
+                    <img src="img/maths_wallpaper.jpg" alt="Abstract data wallpaper" class="card-bg" />
+                    <div class="icon-glass" aria-hidden="true"><i class="fas fa-square-root-alt"></i></div>
+                    <div class="skill-content">
+                        <h3>Mathematical Foundations</h3>
+                        <p>Linear algebra, calculus, optimisation &amp; statistics driving analytical models.</p>
                     </div>
                 </div>
-                <div class="row portfolio-container">
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-3.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>PROJECT_1</h3>
-                                <a class="btn" href="img/portfolio-3.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
+                <div class="skill-card">
+                    <img src="img/maths_wallpaper.jpg" alt="Neural network wallpaper" class="card-bg" />
+                    <div class="icon-glass" aria-hidden="true"><i class="fas fa-brain"></i></div>
+                    <div class="skill-content">
+                        <h3>Machine Learning Engineering</h3>
+                        <p>End-to-end ML pipelines, from feature engineering to production inference.</p>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-2.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>PROJECT_2</h3>
-                                <a class="btn" href="img/portfolio-2.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
+                </div>
+                <div class="skill-card">
+                    <img src="img/maths_wallpaper.jpg" alt="Analytics wallpaper" class="card-bg" />
+                    <div class="icon-glass" aria-hidden="true"><i class="fas fa-chart-bar"></i></div>
+                    <div class="skill-content">
+                        <h3>Business Understanding</h3>
+                        <p>Business acumen and domain knowledge to translate insights into actionable strategies.</p>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-3.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>PROJECT_3</h3>
-                                <a class="btn" href="img/portfolio-3.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-4.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>PROJECT_4</h3>
-                                <a class="btn" href="img/portfolio-4.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-5.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>PROJECT_5</h3>
-                                <a class="btn" href="img/portfolio-5.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="1s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-6.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>PROJECT_6</h3>
-                                <a class="btn" href="img/portfolio-6.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
+                </div>
+                <div class="skill-card">
+                    <img src="img/maths_wallpaper.jpg" alt="Cloud computing wallpaper" class="card-bg" />
+                    <div class="icon-glass" aria-hidden="true"><i class="fas fa-cloud"></i></div>
+                    <div class="skill-content">
+                        <h3>Cloud &amp; MLOps</h3>
+                        <p>AWS, Docker &amp; CI/CD enabling scalable and reliable AI solutions.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Portfolio End -->
+    </section>
 
-        <!-- Footer Start -->
-        <div class="footer wow fadeIn" data-wow-delay="0.3s" id="footer">
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="footer-info">
-                        <h2>Contact me !</h2>
-                        <h3>Joshua BONACORSI</h3>
-                        <div class="footer-menu">
-                            <p>bonacorsijpro@gmail..com</p>
-                        </div>
-                        <div class="footer-social">
-                            <a href="https://github.com/JoshuaBonacorsi"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/joshuabonacorsi/"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
+    <!-- Experience -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2>Expériences</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">2023 – Aujourd'hui</span>
+                    <h3>M7 - Data Scientist</h3>
+                    <p>Développement de modèles prédictifs pour la monétisation de la data publicitaire.</p>
                 </div>
-                <div class="container copyright">
-                    <p>&copy; <a href="#">Joshua BONACORSI</a>, All Right Reserved | 
-					
-					<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
+                <div class="timeline-item">
+                    <span class="timeline-date">2021 – 2023</span>
+                    <h3>Canal+ - Data Analyst</h3>
+                    <p>Analyse de la performance des offres et optimisation de la stratégie d'acquisition.</p>
                 </div>
+                <!-- Ajouter d'autres expériences si nécessaire -->
             </div>
         </div>
-        <!-- Footer End -->
-        
-        
-        <!-- Back to top button -->
-        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
-        
-        
-        <!-- Pre Loader -->
-        <div id="loader" class="show">
-            <div class="loader"></div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2>Projets</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="img/portfolio-1.jpg" alt="Projet 1">
+                    <h3>Détection d'anomalies</h3>
+                    <p>Modèle d'auto-encodeur pour la détection de fraudes bancaires.</p>
+                    <a href="https://github.com/joshuabonacorsi/anomaly-detection" target="_blank" rel="noopener" class="btn btn-sm">Voir le code</a>
+                </div>
+                <!-- Répliquer la carte pour d'autres projets -->
+            </div>
         </div>
+    </section>
 
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/typed/typed.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        
-        <!-- Contact Javascript File -->
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>N'hésitez pas à me contacter pour discuter collaboration, opportunités ou tout simplement échanger.</p>
+            <div class="contact-links">
+                <a href="mailto:joshua.bonacorsi@example.com" class="btn">Email</a>
+                <a href="https://github.com/joshuabonacorsi" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+                <a href="https://www.linkedin.com/in/joshua-bonacorsi" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+            </div>
+        </div>
+    </section>
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
+    <footer class="footer">
+        <div class="container">
+            2025 Joshua Bonacorsi. Tous droits réservés.
+        </div>
+    </footer>
+</body>
 </html>
